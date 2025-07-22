@@ -1,0 +1,20 @@
+:root {
+  --primary-color: #9356DC;
+  --secondary-color: #FF79DA;
+  --tertiary-color: #99E2D0;
+}
+
+h1 {
+    background-color:  var(--primary-color);
+    color: white;
+}
+
+h2 {
+    background-color:  var(--secondary-color);
+    color: white;
+}
+
+h3 {
+    background-color:  var(--tertiary-color);
+    color: white;
+}
