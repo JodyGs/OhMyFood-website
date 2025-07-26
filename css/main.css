@@ -7,9 +7,16 @@
   --dark-blue: #003A68;
   --black: #101010;
   --grey: #353535;
+  --white: #ffffff;
 }
 
-body {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -22,4 +29,53 @@ body {
     font-weight: 400;
     font-style: normal;
 }
+input[type="search"] {
+  background-image: url('data:image/svg+xml;utf8,<svg fill="gray" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 0a5.53 5.53 0 0 0-5.5 5.5c0 3.04 5.5 10.5 5.5 10.5s5.5-7.46 5.5-10.5A5.53 5.53 0 0 0 8 0Zm0 7.5A2 2 0 1 1 8 3a2 2 0 0 1 0 4.5Z"/></svg>');
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-position: 10px center;
+  padding-left: 36px; /* Pour que le texte ne chevauche pas l’icône */
+  font-size: 16px;
+  border: none;
+  background-color: #eaeaea;
+  outline: none;
+  height: 40px;
+  width: 100%;
+}
 
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+
+  .logo{
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+        margin-bottom: 7px;
+      a {
+        text-decoration: none;
+        color: inherit;
+        display: flex;
+        align-items: center;
+        gap: 11px;
+
+        svg {
+          flex-shrink: 0;
+        }
+      }
+
+    &:nth-child(1), &:nth-child(2) {
+        font-weight: 500;
+      }
+    }
+  }
+}
