@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Shrikhand&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Shrikhand&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="/css/main.css" />
     <link rel="icon" type="Image/png" sizes="16x16" href="assets/logos/omf-favicon.png">
 
     <title>Ohmyfood - Paris</title>
 </head>
+
 <body>
     <header>
         <div class="top-bar">
             <h1 class="logo">ohmyfood</h1>
-            </div>
-            <form>
-                <input type="search" placeholder="Paris, Belleville"/>
-            </form>
-        </div>        
+        </div>
+        <form>
+            <input type="search" placeholder="Paris, Belleville" />
+        </form>
+        </div>
     </header>
     <main>
         <section class="hero">
@@ -27,20 +31,175 @@
             <p>Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
             <a href="#restaurants">Explorer nos restaurants</a>
         </section>
-        <section></section>
-        <section id="restaurants"> restaurants </section>
+        <section>
+            <h3 class="title">Fonctionnement</h3>
+            <ol>
+                <li>
+                    <span>1</span>
+                    Choisissez un restaurant
+                </li>
+                <li>
+                    <span>2</span>
+                    Composez votre menu
+                </li>
+                <li>
+                    <span>3</span>
+                    Dégustez au restaurant
+                </li>
+            </ol>
+        </section>
+        <section id="restaurants"> 
+            <h3 class="title">Restaurants</h3>
+            
+            <div class="cards-container">
+                <a href="#">
+                    <article class="card">
+                        <div class="card-image">
+                            <img src="assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Plat servi à table">
+                            <span class="badge">Nouveau</span>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-text">
+                                <h4>La palette du goût</h4>
+                                <p>Ménilmontant</p>
+                            </div>
+                            <div class="card-like">
+                                <label class="heart-toggle">
+                                    <input type="checkbox" class="heart-checkbox" />
+                                    <svg class="heart-svg" xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21" fill="none">
+                                        <defs>
+                                        <linearGradient id="heart-gradient" x1="0" y1="0" x2="0" y2="1">
+                                            <stop offset="0%" stop-color="#FF79DA"/>
+                                            <stop offset="100%" stop-color="#9356DC"/>
+                                        </linearGradient>
+                                        </defs>
+                                        <path class="heart-path"
+                                        stroke="#101010"
+                                        fill="none"
+                                        d="M12.22 2.405c1.94-2.182 4.986-2.552 7.102-.781l.202.178c2.495 2.322 2.632 6.522.388 9.048l-8.314 9.365c-.317.357-.796.38-1.133.067l-.066-.067-8.314-9.365c-2.17-2.447-2.109-6.464.165-8.825l.227-.223C4.53-.108 7.584.135 9.589 2.199l.191.206.847.952.374.42.373-.42.847-.952Z"
+                                        />
+                                    </svg>
+                                </label>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+                <a href="#">
+                    <article class="card">
+                        <div class="card-image">
+                            <img src="assets/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Plat servi à table">
+                            <span class="badge">Nouveau</span>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-text">
+                                <h4>La note enchantée</h4>
+                                <p>Charonne</p>
+                            </div>
+                           <div class="card-like">
+                                <label class="heart-toggle">
+                                    <input type="checkbox" class="heart-checkbox" />
+                                    <svg class="heart-svg" xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21" fill="none">
+                                        <defs>
+                                        <linearGradient id="heart-gradient" x1="0" y1="0" x2="0" y2="1">
+                                            <stop offset="0%" stop-color="#FF79DA"/>
+                                            <stop offset="100%" stop-color="#9356DC"/>
+                                        </linearGradient>
+                                        </defs>
+                                        <path class="heart-path"
+                                        stroke="#101010"
+                                        fill="none"
+                                        d="M12.22 2.405c1.94-2.182 4.986-2.552 7.102-.781l.202.178c2.495 2.322 2.632 6.522.388 9.048l-8.314 9.365c-.317.357-.796.38-1.133.067l-.066-.067-8.314-9.365c-2.17-2.447-2.109-6.464.165-8.825l.227-.223C4.53-.108 7.584.135 9.589 2.199l.191.206.847.952.374.42.373-.42.847-.952Z"
+                                        />
+                                    </svg>
+                                </label>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+                <a href="#">
+                    <article class="card">
+                        <div class="card-image">
+                            <img src="assets/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Plat servi à table">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-text">
+                                <h4>À la française</h4>
+                                <p>Cité Rouge</p>
+                            </div>
+                            <div class="card-like">
+                                <label class="heart-toggle">
+                                    <input type="checkbox" class="heart-checkbox" />
+                                    <svg class="heart-svg" xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21" fill="none">
+                                        <defs>
+                                        <linearGradient id="heart-gradient" x1="0" y1="0" x2="0" y2="1">
+                                            <stop offset="0%" stop-color="#FF79DA"/>
+                                            <stop offset="100%" stop-color="#9356DC"/>
+                                        </linearGradient>
+                                        </defs>
+                                        <path class="heart-path"
+                                        stroke="#101010"
+                                        fill="none"
+                                        d="M12.22 2.405c1.94-2.182 4.986-2.552 7.102-.781l.202.178c2.495 2.322 2.632 6.522.388 9.048l-8.314 9.365c-.317.357-.796.38-1.133.067l-.066-.067-8.314-9.365c-2.17-2.447-2.109-6.464.165-8.825l.227-.223C4.53-.108 7.584.135 9.589 2.199l.191.206.847.952.374.42.373-.42.847-.952Z"
+                                        />
+                                    </svg>
+                                </label>
+                            </div>
+                        </div>
+                    </article>
+                </a>    
+                    <a href="#">
+                        <article class="card">
+                            <div class="card-image">
+                                <img src="assets/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Plat servi à table">
+                            </div>
+                            <div class="card-content">
+                                <div class="card-text">
+                                    <h4>Le délice des sens</h4>
+                                    <p>Folie-Méricourt</p>
+                                </div>
+                                <div class="card-like">
+                                    <label class="heart-toggle">
+                                        <input type="checkbox" class="heart-checkbox" />
+                                        <svg class="heart-svg" xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21" fill="none">
+                                            <defs>
+                                            <linearGradient id="heart-gradient" x1="0" y1="0" x2="0" y2="1">
+                                                <stop offset="0%" stop-color="#FF79DA"/>
+                                                <stop offset="100%" stop-color="#9356DC"/>
+                                            </linearGradient>
+                                            </defs>
+                                            <path class="heart-path"
+                                            stroke="#101010"
+                                            fill="none"
+                                            d="M12.22 2.405c1.94-2.182 4.986-2.552 7.102-.781l.202.178c2.495 2.322 2.632 6.522.388 9.048l-8.314 9.365c-.317.357-.796.38-1.133.067l-.066-.067-8.314-9.365c-2.17-2.447-2.109-6.464.165-8.825l.227-.223C4.53-.108 7.584.135 9.589 2.199l.191.206.847.952.374.42.373-.42.847-.952Z"
+                                            />
+                                        </svg>
+                                        </label>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+            </div>
+        </section>
     </main>
     <footer>
-        <h4 class="logo">ohmyfood</h4>
+        <h2 class="logo">ohmyfood</h4>
         <nav>
             <ul>
-                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="13" fill="none"><path fill="#fff" d="M5.497.386c.022.12.426 2.4.426 3.27 0 1.328-.735 2.275-1.822 2.656l.341 6.046a.622.622 0 0 1-.634.642H2.115a.622.622 0 0 1-.634-.642l.34-6.046C.733 5.932 0 4.982 0 3.656 0 2.783.405.506.426.386.51-.129 1.624-.137 1.692.414v3.585c.035.086.4.081.423 0 .037-.642.21-3.534.212-3.6.087-.528 1.182-.528 1.267 0 .005.068.174 2.958.211 3.6.024.081.391.086.423 0V.414c.069-.549 1.185-.543 1.27-.028ZM8.65 7.64l-.396 4.7c-.032.355.261.66.632.66h1.48a.62.62 0 0 0 .635-.61V.61a.622.622 0 0 0-.635-.61C8.184 0 4.511 4.532 8.65 7.64Z"/></svg>Proposer un restaurant</a></li>
-                <li><a href="#"><svg title="Devenir patenaire" xmlns="http://www.w3.org/2000/svg" width="12" height="13" fill="none"><path fill="#fff" d="M9.088 4.875h-2.83v1.422c0 1.008-.602 1.828-1.342 1.828-.739 0-1.34-.82-1.34-1.828V3.209l-1.209.99c-.36.292-.579.823-.579 1.392v1.201L.298 7.965c-.285.224-.383.721-.218 1.11l1.49 3.52c.164.388.529.52.814.296l1.925-1.516h2.544c.657 0 1.192-.728 1.192-1.625h.298c.33 0 .596-.363.596-.812V7.313h.149c.247 0 .447-.272.447-.61V5.484c0-.337-.2-.61-.447-.61Zm2.75-.95-1.49-3.52c-.164-.388-.529-.52-.813-.296L7.609 1.625H5.706a.979.979 0 0 0-.631.246l-.624.53c-.175.148-.28.41-.28.689v3.207c0 .561.334 1.016.745 1.016.412 0 .745-.455.745-1.016V4.062h3.427c.575 0 1.042.638 1.042 1.422v.724l1.49-1.173c.285-.226.382-.721.218-1.11Z"/></svg>
-                    Devenir partenaire</a></li>
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="13" fill="none">
+                            <path fill="#fff"
+                                d="M5.497.386c.022.12.426 2.4.426 3.27 0 1.328-.735 2.275-1.822 2.656l.341 6.046a.622.622 0 0 1-.634.642H2.115a.622.622 0 0 1-.634-.642l.34-6.046C.733 5.932 0 4.982 0 3.656 0 2.783.405.506.426.386.51-.129 1.624-.137 1.692.414v3.585c.035.086.4.081.423 0 .037-.642.21-3.534.212-3.6.087-.528 1.182-.528 1.267 0 .005.068.174 2.958.211 3.6.024.081.391.086.423 0V.414c.069-.549 1.185-.543 1.27-.028ZM8.65 7.64l-.396 4.7c-.032.355.261.66.632.66h1.48a.62.62 0 0 0 .635-.61V.61a.622.622 0 0 0-.635-.61C8.184 0 4.511 4.532 8.65 7.64Z" />
+                        </svg>Proposer un restaurant</a></li>
+                <li><a href="#"><svg title="Devenir patenaire" xmlns="http://www.w3.org/2000/svg" width="12" height="13"
+                            fill="none">
+                            <path fill="#fff"
+                                d="M9.088 4.875h-2.83v1.422c0 1.008-.602 1.828-1.342 1.828-.739 0-1.34-.82-1.34-1.828V3.209l-1.209.99c-.36.292-.579.823-.579 1.392v1.201L.298 7.965c-.285.224-.383.721-.218 1.11l1.49 3.52c.164.388.529.52.814.296l1.925-1.516h2.544c.657 0 1.192-.728 1.192-1.625h.298c.33 0 .596-.363.596-.812V7.313h.149c.247 0 .447-.272.447-.61V5.484c0-.337-.2-.61-.447-.61Zm2.75-.95-1.49-3.52c-.164-.388-.529-.52-.813-.296L7.609 1.625H5.706a.979.979 0 0 0-.631.246l-.624.53c-.175.148-.28.41-.28.689v3.207c0 .561.334 1.016.745 1.016.412 0 .745-.455.745-1.016V4.062h3.427c.575 0 1.042.638 1.042 1.422v.724l1.49-1.173c.285-.226.382-.721.218-1.11Z" />
+                        </svg>
+                        Devenir partenaire</a></li>
                 <li><a href="#">Mentions légales</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </footer>
 </body>
+
 </html>
