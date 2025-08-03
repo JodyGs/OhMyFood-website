@@ -11,6 +11,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="/css/main.css" />
     <link rel="icon" type="Image/png" sizes="16x16" href="assets/logos/omf-favicon.png">
+    <script src="https://kit.fontawesome.com/e9ad2cc302.js" crossorigin="anonymous"></script>
 
     <title>Ohmyfood - Paris</title>
 </head>
@@ -33,153 +34,99 @@
         </section>
         <section>
             <h3 class="title">Fonctionnement</h3>
-            <ol>
-                <li>
-                    <span>1</span>
-                    Choisissez un restaurant
-                </li>
-                <li>
-                    <span>2</span>
-                    Composez votre menu
-                </li>
-                <li>
-                    <span>3</span>
-                    Dégustez au restaurant
-                </li>
-            </ol>
+            <ol class="steps__list">
+                    <li class="step">
+                        <i class="fa-solid fa-mobile-screen-button step__icon"></i>
+                        <h3 class="step__title">Choisissez un restaurant</h3>
+                        <span class="step__number">1</span>
+                    </li>
+                    <li class="step">
+                        <i class="fa-solid fa-list-ul step__icon"></i>
+                        <h3 class="step__title">Composez votre menu</h3>
+                        <span class="step__number">2</span>
+                    </li>
+                    <li class="step">
+                        <i class="fa-solid fa-store step__icon"></i>
+                        <h3 class="step__title">Dégustez au restaurant</h3>
+                        <span class="step__number">3</span>
+                    </li>
+                </ol>
         </section>
-        <section id="restaurants"> 
-            <h3 class="title">Restaurants</h3>
-            
-            <div class="cards-container">
-                <a href="#">
+         <section id="restaurants" class="cards">
+                <h2>Restaurants</h2>
+                <!-- Cards list -->
+                <div class="cards__list">
+                    <!-- Card -->
                     <article class="card">
-                        <div class="card-image">
-                            <img src="assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Plat servi à table">
-                            <span class="badge">Nouveau</span>
+                        <a href="menu_la_palette_du_gout.html">
+                            <img class="card__img" src="assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
+                        </a>
+                        <div class="card__body">
+                            <div class="card__description">
+                                <a href="menu_la_palette_du_gout.html"><h3 class="card__title">La palette du goût</h3></a>
+                                <h4 class="card__city">Ménilmontant</h4>
+                            </div>
+                            <input type="checkbox" id="like-delice" class="checkbox-like" />
+                            <label class="btn-like">
+                                <input type="checkbox" class="checkbox-like" />
+                                <i class="fa-regular fa-heart"></i>
+                            </label>
                         </div>
-                        <div class="card-content">
-                            <div class="card-text">
-                                <h4>La palette du goût</h4>
-                                <p>Ménilmontant</p>
+                        <span class="card__status">Nouveau</span>
+                    </article>
+                    <!-- Card -->
+                    <article class="card">
+                        <a href="menu_la_note_enchantee.html">
+                            <img class="card__img" src="assets/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée">
+                        </a>
+                        <div class="card__body">
+                            <div class="card__description">
+                                <a href="menu_la_note_enchantee.html"><h3 class="card__title">La note enchantée</h3></a>
+                                <h4 class="card__city">Charonne</h4>
                             </div>
-                            <div class="card-like">
-                                <label class="heart-toggle">
-                                    <input type="checkbox" class="heart-checkbox" />
-                                    <svg class="heart-svg" xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21" fill="none">
-                                        <defs>
-                                        <linearGradient id="heart-gradient" x1="0" y1="0" x2="0" y2="1">
-                                            <stop offset="0%" stop-color="#FF79DA"/>
-                                            <stop offset="100%" stop-color="#9356DC"/>
-                                        </linearGradient>
-                                        </defs>
-                                        <path class="heart-path"
-                                        stroke="#101010"
-                                        fill="none"
-                                        d="M12.22 2.405c1.94-2.182 4.986-2.552 7.102-.781l.202.178c2.495 2.322 2.632 6.522.388 9.048l-8.314 9.365c-.317.357-.796.38-1.133.067l-.066-.067-8.314-9.365c-2.17-2.447-2.109-6.464.165-8.825l.227-.223C4.53-.108 7.584.135 9.589 2.199l.191.206.847.952.374.42.373-.42.847-.952Z"
-                                        />
-                                    </svg>
-                                </label>
+                            <input type="checkbox" id="like-delice" class="checkbox-like" />
+                            <label class="btn-like">
+                                <input type="checkbox" class="checkbox-like" />
+                                <i class="fa-regular fa-heart"></i>
+                            </label>
+                        </div>
+                        <span class="card__status">Nouveau</span>
+                    </article>
+                    <!-- Card -->
+                    <article class="card">
+                        <a href="menu_a_la_francaise.html">
+                            <img class="card__img" src="assets/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française">
+                        </a>
+                        <div class="card__body">
+                            <div class="card__description">
+                                <a href="menu_a_la_francaise.html"><h3 class="card__title">À la française</h3></a>
+                                <h4 class="card__city">Cité Rouge</h4>
                             </div>
+                            <input type="checkbox" id="like-delice" class="checkbox-like" />
+                            <label class="btn-like">
+                                <input type="checkbox" class="checkbox-like" />
+                                <i class="fa-regular fa-heart"></i>
+                            </label>
                         </div>
                     </article>
-                </a>
-                <a href="#">
+                    <!-- Card -->
                     <article class="card">
-                        <div class="card-image">
-                            <img src="assets/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Plat servi à table">
-                            <span class="badge">Nouveau</span>
-                        </div>
-                        <div class="card-content">
-                            <div class="card-text">
-                                <h4>La note enchantée</h4>
-                                <p>Charonne</p>
+                        <a href="menu_le_delice_des_sens.html">
+                            <img class="card__img" src="assets/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens">
+                        </a>
+                        <div class="card__body">
+                            <div class="card__description">
+                                <a href="menu_le_delice_des_sens.html"><h3 class="card__title">Le délice des sens</h3></a>
+                                <h4 class="card__city">Folie-Méricourt</h4>
                             </div>
-                           <div class="card-like">
-                                <label class="heart-toggle">
-                                    <input type="checkbox" class="heart-checkbox" />
-                                    <svg class="heart-svg" xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21" fill="none">
-                                        <defs>
-                                        <linearGradient id="heart-gradient" x1="0" y1="0" x2="0" y2="1">
-                                            <stop offset="0%" stop-color="#FF79DA"/>
-                                            <stop offset="100%" stop-color="#9356DC"/>
-                                        </linearGradient>
-                                        </defs>
-                                        <path class="heart-path"
-                                        stroke="#101010"
-                                        fill="none"
-                                        d="M12.22 2.405c1.94-2.182 4.986-2.552 7.102-.781l.202.178c2.495 2.322 2.632 6.522.388 9.048l-8.314 9.365c-.317.357-.796.38-1.133.067l-.066-.067-8.314-9.365c-2.17-2.447-2.109-6.464.165-8.825l.227-.223C4.53-.108 7.584.135 9.589 2.199l.191.206.847.952.374.42.373-.42.847-.952Z"
-                                        />
-                                    </svg>
-                                </label>
-                            </div>
+                            <label class="btn-like">
+                                <input type="checkbox" class="checkbox-like" />
+                                <i class="fa-regular fa-heart"></i>
+                            </label>
                         </div>
                     </article>
-                </a>
-                <a href="#">
-                    <article class="card">
-                        <div class="card-image">
-                            <img src="assets/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Plat servi à table">
-                        </div>
-                        <div class="card-content">
-                            <div class="card-text">
-                                <h4>À la française</h4>
-                                <p>Cité Rouge</p>
-                            </div>
-                            <div class="card-like">
-                                <label class="heart-toggle">
-                                    <input type="checkbox" class="heart-checkbox" />
-                                    <svg class="heart-svg" xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21" fill="none">
-                                        <defs>
-                                        <linearGradient id="heart-gradient" x1="0" y1="0" x2="0" y2="1">
-                                            <stop offset="0%" stop-color="#FF79DA"/>
-                                            <stop offset="100%" stop-color="#9356DC"/>
-                                        </linearGradient>
-                                        </defs>
-                                        <path class="heart-path"
-                                        stroke="#101010"
-                                        fill="none"
-                                        d="M12.22 2.405c1.94-2.182 4.986-2.552 7.102-.781l.202.178c2.495 2.322 2.632 6.522.388 9.048l-8.314 9.365c-.317.357-.796.38-1.133.067l-.066-.067-8.314-9.365c-2.17-2.447-2.109-6.464.165-8.825l.227-.223C4.53-.108 7.584.135 9.589 2.199l.191.206.847.952.374.42.373-.42.847-.952Z"
-                                        />
-                                    </svg>
-                                </label>
-                            </div>
-                        </div>
-                    </article>
-                </a>    
-                    <a href="#">
-                        <article class="card">
-                            <div class="card-image">
-                                <img src="assets/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Plat servi à table">
-                            </div>
-                            <div class="card-content">
-                                <div class="card-text">
-                                    <h4>Le délice des sens</h4>
-                                    <p>Folie-Méricourt</p>
-                                </div>
-                                <div class="card-like">
-                                    <label class="heart-toggle">
-                                        <input type="checkbox" class="heart-checkbox" />
-                                        <svg class="heart-svg" xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21" fill="none">
-                                            <defs>
-                                            <linearGradient id="heart-gradient" x1="0" y1="0" x2="0" y2="1">
-                                                <stop offset="0%" stop-color="#FF79DA"/>
-                                                <stop offset="100%" stop-color="#9356DC"/>
-                                            </linearGradient>
-                                            </defs>
-                                            <path class="heart-path"
-                                            stroke="#101010"
-                                            fill="none"
-                                            d="M12.22 2.405c1.94-2.182 4.986-2.552 7.102-.781l.202.178c2.495 2.322 2.632 6.522.388 9.048l-8.314 9.365c-.317.357-.796.38-1.133.067l-.066-.067-8.314-9.365c-2.17-2.447-2.109-6.464.165-8.825l.227-.223C4.53-.108 7.584.135 9.589 2.199l.191.206.847.952.374.42.373-.42.847-.952Z"
-                                            />
-                                        </svg>
-                                        </label>
-                                </div>
-                            </div>
-                        </article>
-                    </a>
-            </div>
-        </section>
+                </div>
+            </section>
     </main>
     <footer>
         <h2 class="logo">ohmyfood</h4>
