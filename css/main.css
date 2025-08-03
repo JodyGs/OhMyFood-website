@@ -39,6 +39,11 @@ html, body {
 .title {
     font-size: 24px;
     font-weight: 700;
+    margin: 16px 0;
+}
+
+a{
+    cursor: pointer;
 }
 
 /* HEADER */
@@ -235,35 +240,31 @@ header {
   }
 }
 
+.btn-like {
+  i {
+    font-size: 1.5625rem;
+    color: #101010;
+    font-weight: 400;
+    transition: 
+      background-image 0.3s ease,
+      font-weight 0.3s ease,
+      -webkit-text-fill-color 0.8s ease;
+  }
+}
+
 .checkbox-like {
-  display: none;
-}
+    display: none;
 
-.btn-like i {
-  font-size: 1.5625rem;
-  color: #101010;
-  font-weight: 400;
-  transition: 
-    background-image 0.3s ease,
-    font-weight 0.3s ease,
-    -webkit-text-fill-color 0.8s ease;
-}
+    &:checked + i {
+      font-weight: 700;
+      background-image: linear-gradient(180deg, var(--secondary-color), var(--primary-color));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
 
-/* Appliquer le style lorsque la checkbox est cochée */
-.btn-like .checkbox-like:checked + i {
-  font-weight: 700;
-  background-image: linear-gradient(180deg, var(--secondary-color), var(--primary-color));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-  /* Pour compatibilité Firefox */
-  background-clip: text;
-  color: transparent;
-}
-
-
-
-
+      background-clip: text;
+      color: transparent;
+    }
+  }
 
 
 /* FOOTER */
