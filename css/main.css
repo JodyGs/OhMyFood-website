@@ -46,6 +46,84 @@ a{
     cursor: pointer;
 }
 
+.btn {
+        color: var(--white);
+        font-size: 16px;
+        border-radius: 25px;
+        border: none;
+        padding: 13px 18px;
+        background: linear-gradient(-4deg, var(--primary-color) -11.44%, var(--secondary-color) 123.93%);
+    }
+
+
+/* Loader */
+.loader {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: #fff;
+  animation: fadeout 2s ease forwards;
+  animation-delay: 3s;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 142px;
+    height:40px;
+    background:#fff;
+    filter: contrast(20);
+}
+
+.container .dot {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 12px;
+    left: 15px;
+    filter: blur(4px);
+    background: var(--primary-color);
+    border-radius: 50%;
+    animation: point 2.8s infinite;
+}
+.container .dots span {
+    display: block;
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin-left: 16px;
+    filter: blur(4px);
+    background: var(--primary-color);
+    border-radius: 50%;
+}
+
+.container .dots {
+    margin-top: 12px;
+    margin-left: 31px;
+    animation: points 2.8s infinite;
+}
+
+@keyframes point {
+    50% {
+        transform: translateX(96px);
+    }
+}
+
+@keyframes points {
+    50% {
+        transform: translateX(-31px);
+    }
+}
+
+@keyframes fadeout {
+  from { opacity: 1; }
+  to { opacity: 0; visibility: hidden; }
+}
+
+
 /* HEADER */
 header {
     background-color: white;
@@ -56,7 +134,7 @@ header {
     .logo {
         font-size: 30px;
         background-color: white;
-        box-shadow: 0px 2px 4px 0px #00000026;
+        box-shadow: 0px 2px 4px 0px #00000026; /* TODO: Ajouter une div pour homepage */
     }
 
     .top-bar{
@@ -121,18 +199,13 @@ header {
         max-width: 315px;
         margin-bottom: 16px;
     }
-
-    a {
-        color: var(--white);
-        font-size: 16px;
-        border-radius: 25px;
-        border: none;
-        padding: 13px 18px;
-        background: linear-gradient(-4deg, var(--primary-color) -11.44%, var(--secondary-color) 123.93%);
-    }
 }
 
 /* Fonctionnement */
+#fonctionnement, #restaurants {
+  padding: 16px;
+}
+
 .step {
   background: #F6F6F6;
   padding: 1.5625rem 0.625rem;
@@ -184,6 +257,10 @@ header {
 
 
 /* Restaurants */
+
+#restaurants {
+  background-color: var(--light-grey);
+}
 
 .card {
   position: relative;
@@ -269,13 +346,14 @@ header {
 
 /* FOOTER */
 footer {
-    background-color: #333;
+    background-color: var(--grey);
     color: white;
     padding: 20px;
 
     .logo{
         font-size: 18px;
         margin-bottom: 12px;
+        color: white;
     }
 
     ul {
@@ -299,3 +377,34 @@ footer {
         }
     }
 }
+
+/* Page resutaurants
+Header 
+*/
+
+.header {
+  position: relative;
+  z-index: 1;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.header .navbar {
+  margin-right: auto;
+}
+.header .navbar a {
+  display: inline-block;
+  font-size: 1.125rem;
+  transform: scale(1);
+}
+.header .navbar a:hover {
+  transform: scale(1.1);
+}
+.header .navbar ~ h1 {
+  margin-right: auto;
+}
+
+

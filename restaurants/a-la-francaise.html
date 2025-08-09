@@ -22,143 +22,79 @@
     <script src="https://kit.fontawesome.com/e9ad2cc302.js" crossorigin="anonymous"></script>
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
     <!-- Header -->
     <header class="header">
         <nav class="navbar">
-            <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
+            <a href="/"><i class="fa-solid fa-arrow-left"></i></a>
         </nav>
-        <img src="images/logo/ohmyfood.svg" alt="Logo">
+        <h1 class="logo">Ohmyfood</h1>
+        <!-- <img src="../assets/logos/ohmyfood@2x.svg" alt="Logo"> -->
     </header>
     
-    <!-- Menu -->
-    <main>
-        <section class="menu">
-            <!-- Banner -->
-            <img class="menu__banner" src="images/restaurants/a_la_francaise.jpg" alt="À la française">
+     <main>
+        <section class="">
+                <div class="">
+                    <img src="/assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Restaurant à la francaise">
+                    </div>
+                    <div class="">
+                    <div class="">
+                        <h2>À la francaise</h2>
+                        <label class="btn-like">
+                                    <input type="checkbox" class="checkbox-like" />
+                                    <i class="fa-regular fa-heart"></i>
+                        </label>
+                    </div>
+                    <div class="">
+                        <div class="">
+                            <h3 class="">Entrée</h3>
+                            <div class="">
+                                <div class="">
+                                    <div class="">
+                                        <h4>Tartare de poulpe acidulé</h4>
+                                        <p>Aux zestes d'orange</p>
+                                    </div>
+                                    <div class="">
+                                        <p>25€</p>
+                                    </div>
+                                </div>
+                                <div class="">
+                                </div>
+                            </div>
 
-            <!-- Menu content -->
-            <div class="menu__content">
-                <div class="menu__info">
-                    <h1 class="menu__title">À la française</h1>
-                    <button class="btn-like btn--mr"><i class="fa-regular fa-heart"></i></button>
-                </div>
+                           
 
-                <!-- Entries -->
-                <div class="menu__plates">
-                    <h2 class="underline-title">Entrées</h2>
-                    <!-- Plates list -->
-                    <div class="plates__list">
-                        <a href="#" class="plate plate--1">
-                            <div class="plate__info">
-                                <h3 class="plate__title">Tartare de poulpe acidulé</h3>
-                                <h4 class="plate__composition">Aux zestes d'orange</h4>
-                            </div>
-                            <strong class="plate__price">25&euro;</strong>
-                            <div class="plate__confirmation"><i class="fa-solid fa-circle-check"></i></div>
-                        </a>
-                        <a href="#" class="plate plate--2">
-                            <div class="plate__info">
-                                <h3 class="plate__title">Velouté de légumes d'antan</h3>
-                                <h4 class="plate__composition">Carotte, panais, topinambour</h4>
-                            </div>
-                            <strong class="plate__price">35&euro;</strong>
-                            <div class="plate__confirmation"><i class="fa-solid fa-circle-check"></i></div>
-                        </a>
-                        <a href="#" class="plate plate--3">
-                            <div class="plate__info">
-                                <h3 class="plate__title">Soupe à l'oignon</h3>
-                                <h4 class="plate__composition">Revisitée</h4>
-                            </div>
-                            <strong class="plate__price">20&euro;</strong>
-                            <div class="plate__confirmation"><i class="fa-solid fa-circle-check"></i></div>
-                        </a>
+                    <div class="">
+                        <button type="submit" class="btn">Commander</button>
                     </div>
                 </div>
+                
+            </section>
 
-                <!-- Dishes -->
-                <div class="menu__plates">
-                    <h2 class="underline-title">Plats</h2>
-                    <!-- Plates list -->
-                    <div class="plates__list">
-                        <a href="#" class="plate plate--4">
-                            <div class="plate__info">
-                                <h3 class="plate__title">Coquilles Saint-Jacques</h3>
-                                <h4 class="plate__composition">Accompagnées d'une purée de panais</h4>
-                            </div>
-                            <strong class="plate__price">40&euro;</strong>
-                            <div class="plate__confirmation"><i class="fa-solid fa-circle-check"></i></div>
-                        </a>
-                        <a href="#" class="plate plate--5">
-                            <div class="plate__info">
-                                <h3 class="plate__title">Magret de canard</h3>
-                                <h4 class="plate__composition">Et parmentier de pommes de terre</h4>
-                            </div>
-                            <strong class="plate__price">35&euro;</strong>
-                            <div class="plate__confirmation"><i class="fa-solid fa-circle-check"></i></div>
-                        </a>
-                        <a href="#" class="plate plate--6">
-                            <div class="plate__info">
-                                <h3 class="plate__title">Pigeonneau d'Ille-et-Vilaine</h3>
-                                <h4 class="plate__composition">Sur son lit de gnocchis aux légumes</h4>
-                            </div>
-                            <strong class="plate__price">44&euro;</strong>
-                            <div class="plate__confirmation"><i class="fa-solid fa-circle-check"></i></div>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Desserts -->
-                <div class="menu__plates">
-                    <h2 class="underline-title">Desserts</h2>
-                    <!-- Plates list -->
-                    <div class="plates__list">
-                        <a href="#" class="plate plate--7">
-                            <div class="plate__info">
-                                <h3 class="plate__title">Pétales de violettes glacés</h3>
-                                <h4 class="plate__composition">Et purée de noisettes</h4>
-                            </div>
-                            <strong class="plate__price">18&euro;</strong>
-                            <div class="plate__confirmation"><i class="fa-solid fa-circle-check"></i></div>
-                        </a>
-                        <a href="#" class="plate plate--8">
-                            <div class="plate__info">
-                                <h3 class="plate__title">Fondant au chocolat</h3>
-                                <h4 class="plate__composition">Revisité</h4>
-                            </div>
-                            <strong class="plate__price">22&euro;</strong>
-                            <div class="plate__confirmation"><i class="fa-solid fa-circle-check"></i></div>
-                        </a>
-                        <a href="#" class="plate plate--9">
-                            <div class="plate__info">
-                                <h3 class="plate__title">Millefeuille croustillant</h3>
-                                <h4 class="plate__composition">Myrtilles et pâte d'amande</h4>
-                            </div>
-                            <strong class="plate__price">23&euro;</strong>
-                            <div class="plate__confirmation"><i class="fa-solid fa-circle-check"></i></div>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Order -->
-                <div class="menu__order">
-                    <a href="#" class="btn btn--py">Commander</a>
-                </div>
-            </div>
-        </section>
     </main>
+
     
     <!-- Footer -->
-    <footer class="footer">
-        <h2 class="footer__title">Ohmyfood</h2>
-        <ul class="footer__link">
-            <li><a href="#"><i class="fa-solid fa-utensils"></i> Proposer un restaurant</a></li>
-            <li><a href="#"><i class="fa-solid fa-handshake-angle"></i> Devenir partenaire</a></li>
-            <li><a href="#">Mentions légales</a></li>
-            <li><address><a href="mailto:contact@ohmyfood.com">Contact</a></address></li>
-        </ul>
+     <footer>
+        <h2 class="logo">ohmyfood</h4>
+        <nav>
+            <ul>
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="13" fill="none">
+                            <path fill="#fff"
+                                d="M5.497.386c.022.12.426 2.4.426 3.27 0 1.328-.735 2.275-1.822 2.656l.341 6.046a.622.622 0 0 1-.634.642H2.115a.622.622 0 0 1-.634-.642l.34-6.046C.733 5.932 0 4.982 0 3.656 0 2.783.405.506.426.386.51-.129 1.624-.137 1.692.414v3.585c.035.086.4.081.423 0 .037-.642.21-3.534.212-3.6.087-.528 1.182-.528 1.267 0 .005.068.174 2.958.211 3.6.024.081.391.086.423 0V.414c.069-.549 1.185-.543 1.27-.028ZM8.65 7.64l-.396 4.7c-.032.355.261.66.632.66h1.48a.62.62 0 0 0 .635-.61V.61a.622.622 0 0 0-.635-.61C8.184 0 4.511 4.532 8.65 7.64Z" />
+                        </svg>Proposer un restaurant</a></li>
+                <li><a href="#"><svg title="Devenir partenaire" xmlns="http://www.w3.org/2000/svg" width="12" height="13"
+                            fill="none">
+                            <path fill="#fff"
+                                d="M9.088 4.875h-2.83v1.422c0 1.008-.602 1.828-1.342 1.828-.739 0-1.34-.82-1.34-1.828V3.209l-1.209.99c-.36.292-.579.823-.579 1.392v1.201L.298 7.965c-.285.224-.383.721-.218 1.11l1.49 3.52c.164.388.529.52.814.296l1.925-1.516h2.544c.657 0 1.192-.728 1.192-1.625h.298c.33 0 .596-.363.596-.812V7.313h.149c.247 0 .447-.272.447-.61V5.484c0-.337-.2-.61-.447-.61Zm2.75-.95-1.49-3.52c-.164-.388-.529-.52-.813-.296L7.609 1.625H5.706a.979.979 0 0 0-.631.246l-.624.53c-.175.148-.28.41-.28.689v3.207c0 .561.334 1.016.745 1.016.412 0 .745-.455.745-1.016V4.062h3.427c.575 0 1.042.638 1.042 1.422v.724l1.49-1.173c.285-.226.382-.721.218-1.11Z" />
+                        </svg>
+                        Devenir partenaire</a></li>
+                <li><a href="#">Mentions légales</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
     </footer>
 </body>
 </html>
