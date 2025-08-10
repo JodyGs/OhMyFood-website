@@ -387,7 +387,6 @@ Header
   z-index: 1;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
   flex-wrap: nowrap;
@@ -407,4 +406,127 @@ Header
   margin-right: auto;
 }
 
+@keyframes plate-slide-in {
+  0% {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 
+.plate {
+  padding: 0.75rem;
+  background: #FFF;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  animation: plate-slide-in 0.6s ease both;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: row;
+  align-items: inherit;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  opacity: 0; /* important pour l'animation */
+}
+
+/* Délai progressif avec nth-child */
+.plates__list .plate:nth-child(1) { animation-delay: 0.1s; }
+.plates__list .plate:nth-child(2) { animation-delay: 0.2s; }
+.plates__list .plate:nth-child(3) { animation-delay: 0.3s; }
+.plates__list .plate:nth-child(4) { animation-delay: 0.4s; }
+.plates__list .plate:nth-child(5) { animation-delay: 0.5s; }
+.plates__list .plate:nth-child(6) { animation-delay: 0.6s; }
+.plates__list .plate:nth-child(7) { animation-delay: 0.7s; }
+.plates__list .plate:nth-child(8) { animation-delay: 0.8s; }
+.plates__list .plate:nth-child(9) { animation-delay: 0.9s; }
+.plates__list .plate:nth-child(10) { animation-delay: 1s; }
+
+/* Hover intact */
+.plate__info {
+  white-space: nowrap;
+  overflow: hidden;
+  flex: 1;
+}
+.plate__title, .plate__composition {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.plate__title {
+  font-weight: 900;
+  font-size: 1.125rem;
+  margin-bottom: 0.3125rem;
+}
+.plate__composition {
+  font-weight: 300;
+  font-size: 0.9375rem;
+}
+.plate__price {
+  align-self: flex-end;
+  margin-left: 0.625rem;
+}
+.plate__confirmation {
+  background-color: #99E2D0;
+  color: #FFF;
+  font-size: 1.25rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  width: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -0.75rem -4.5rem -0.75rem 1rem;
+  transition: margin-right 750ms ease;
+}
+.plate__confirmation i {
+  transform: rotate(0);
+  transition: transform 750ms ease;
+}
+.plate:hover {
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+.plate:hover .plate__confirmation {
+  margin-right: -0.75rem;
+}
+.plate:hover .plate__confirmation i {
+  transform: rotate(360deg);
+}
+
+
+.menu {
+  padding: 0;
+}
+.menu__banner {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+}
+.menu__content {
+  background-color: #F6F6F6;
+  border-top-left-radius: 2.5rem;
+  border-top-right-radius: 2.5rem;
+  margin-top: -4rem;
+  position: relative;
+  z-index: 2;
+}
+.menu__info {
+  margin-bottom: 2.5rem;
+  padding: 10px 12px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.menu__title {
+  font-family: "Shrikhand", cursive;
+  font-weight: normal;
+  font-size: 1.75rem;
+  margin-bottom: 0;
+}
+.menu__plates {
+  margin-bottom: 3rem;
+}
