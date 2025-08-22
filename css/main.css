@@ -64,7 +64,7 @@ a{
   z-index: 10;
   background-color: #fff;
   animation: fadeout 2s ease forwards;
-  animation-delay: 3s;
+  animation-delay: 2s;
 }
 
 .container {
@@ -314,6 +314,7 @@ header {
     top: 15px;
     right: 15px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 2px;
   }
 }
 
@@ -430,10 +431,9 @@ Header
   align-items: inherit;
   justify-content: space-between;
   flex-wrap: nowrap;
-  opacity: 0; /* important pour l'animation */
+  opacity: 0;
 }
 
-/* Délai progressif avec nth-child */
 .plates__list .plate:nth-child(1) { animation-delay: 0.1s; }
 .plates__list .plate:nth-child(2) { animation-delay: 0.2s; }
 .plates__list .plate:nth-child(3) { animation-delay: 0.3s; }
@@ -445,7 +445,6 @@ Header
 .plates__list .plate:nth-child(9) { animation-delay: 0.9s; }
 .plates__list .plate:nth-child(10) { animation-delay: 1s; }
 
-/* Hover intact */
 .plate__info {
   white-space: nowrap;
   overflow: hidden;
@@ -484,6 +483,7 @@ Header
 .plate__confirmation i {
   transform: rotate(0);
   transition: transform 750ms ease;
+  color: var(--white);
 }
 .plate:hover {
   box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
@@ -529,4 +529,62 @@ Header
 }
 .menu__plates {
   margin-bottom: 3rem;
+}
+
+
+@media only screen and (min-width: 768px) {
+  .step {
+    flex-basis: 47%;
+    margin: 15px auto;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .step {
+    flex-basis: 30%;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .steps__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .cards__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .cards__list a {
+    width: 48%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    padding-top: 70px;
+  }
+
+  footer nav{
+    width: 100%;
+  }
+
+  footer ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+  }
 }
