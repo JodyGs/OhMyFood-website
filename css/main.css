@@ -54,14 +54,22 @@ a{
         padding: 13px 18px;
         background: linear-gradient(-4deg, var(--primary-color) -11.44%, var(--secondary-color) 123.93%);
         margin: auto;
+        transition: opacity 0.3s ease;
+    }
+
+    .btn:hover {
+        opacity: 0.8;
+        cursor: pointer;
     }
 
 
 /* Loader */
 .loader {
-  position: absolute;
-  width: 100%;
-  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
   z-index: 10;
   background-color: #fff;
   animation: fadeout 2s ease forwards;
@@ -586,9 +594,7 @@ footer ul li:nth-child(1), footer ul li:nth-child(2) {
         max-width: none;
         margin-bottom: 16px;
     }
-}
 
-@media screen and (min-width: 768px) {
     /* Sections */
     #fonctionnement, #restaurants {
         padding: 50px;
@@ -614,51 +620,15 @@ footer ul li:nth-child(1), footer ul li:nth-child(2) {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
-        gap: 50px;
+        justify-content: space-between;
+        gap: 20px;
     }
 
     .cards__list a {
-        width: 48%;
-        max-width: 490px;
+        width: calc(50% - 10px);
+        max-width: none;
     }
-}
 
-@media screen and (min-width: 1024px) {
-  #fonctionnement, #restaurants {
-    padding: 50px 180px;
-  }
-  
-  #fonctionnement .title, #restaurants .title {
-    max-width: 1080px;
-    margin: 16px auto;
-  }
-  
-  .steps__list {
-    gap: 36px;
-    flex-wrap: nowrap;
-    max-width: 1080px;
-    margin: 0 auto;
-  }
-  
-  .step {
-    flex: 1;
-    max-width: 490px;
-  }
-  
-  .cards__list {
-    gap: 100px;
-    max-width: 1080px;
-    margin: 0 auto;
-  }
-  
-  .cards__list a {
-    width: 490px;
-    max-width: 490px;
-  }
-}
-
-@media screen and (min-width: 768px) {
     /* Menu responsive */
     .menu__content {
         padding: 32px 40px;
@@ -708,27 +678,60 @@ footer ul li:nth-child(1), footer ul li:nth-child(2) {
 }
 
 @media screen and (min-width: 1024px) {
-    /* Menu desktop */
-    .menu__content {
-        max-width: 1200px;
-        margin: -64px auto 0;
-        padding: 51px 210px;
-    }
-    
-    .menu__info {
-        justify-content: center;
-        gap: 24px;
-    }
-    
-    .menu__plates {
-        display: flex;
-        flex-direction: column;
-        gap: 32px;
-    }
-    
-    .menu__plates .plates__list {
-        display: flex;
-        flex-direction: column;
-        flex: 1;
-    }
+  #fonctionnement, #restaurants {
+    padding: 50px 180px;
+  }
+  
+  #fonctionnement .title, #restaurants .title {
+    max-width: 1080px;
+    margin: 16px auto;
+  }
+  
+  .steps__list {
+    gap: 36px;
+    flex-wrap: nowrap;
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+  
+  .step {
+    flex: 1;
+    max-width: 490px;
+  }
+  
+  .cards__list {
+    gap: 50px;
+    max-width: 1080px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+  
+  .cards__list a {
+    width: calc(50% - 25px);
+    max-width: 490px;
+  }
+
+  /* Menu desktop */
+  .menu__content {
+    max-width: 1200px;
+    margin: -64px auto 0;
+    padding: 51px 210px;
+  }
+  
+  .menu__info {
+    justify-content: center;
+    gap: 24px;
+  }
+  
+  .menu__plates {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  
+  .menu__plates .plates__list {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
 }
