@@ -402,7 +402,7 @@ footer ul li:nth-child(1), footer ul li:nth-child(2) {
 .header .navbar a:hover {
   transform: scale(1.1);
 }
-.header .navbar ~ h1 {
+.header .navbar ~ p {
   margin-right: auto;
 }
 
